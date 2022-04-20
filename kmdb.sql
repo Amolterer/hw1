@@ -150,29 +150,242 @@ INSERT INTO movies(
     );
 
 INSERT INTO movies(
-    title,
+    title, 
     year,
     MPAA_rating,
-    studio
+    studio,
+    actor_id,
+    character_id
+    )
+    VALUES (
+    "Batman Begins",
+    "2005",
+    "PG-13",
+    "Warner Bros.",
+    2,
+    2   
+    );
+
+INSERT INTO movies(
+    title, 
+    year,
+    MPAA_rating,
+    studio,
+    actor_id,
+    character_id
+    )
+    VALUES (
+    "Batman Begins",
+    "2005",
+    "PG-13",
+    "Warner Bros.",
+    3,
+    3   
+    );
+
+INSERT INTO movies(
+    title, 
+    year,
+    MPAA_rating,
+    studio,
+    actor_id,
+    character_id
+    )
+    VALUES (
+    "Batman Begins",
+    "2005",
+    "PG-13",
+    "Warner Bros.",
+    4,
+    4   
+    );
+
+INSERT INTO movies(
+    title, 
+    year,
+    MPAA_rating,
+    studio,
+    actor_id,
+    character_id
+    )
+    VALUES (
+    "Batman Begins",
+    "2005",
+    "PG-13",
+    "Warner Bros.",
+    5,
+    5   
+    );
+
+INSERT INTO movies(
+    title, 
+    year,
+    MPAA_rating,
+    studio,
+    actor_id,
+    character_id
     )
     VALUES (
     "The Dark Knight",
     "2008",
     "PG-13",
-    "Warner Bros."    
+    "Warner Bros.",
+    1,
+    1   
     );
 
-INSERT INTO movies (
-    title,
+INSERT INTO movies(
+    title, 
     year,
-    MPAA_rating, 
-    studio)
+    MPAA_rating,
+    studio,
+    actor_id,
+    character_id
+    )
+    VALUES (
+    "The Dark Knight",
+    "2008",
+    "PG-13",
+    "Warner Bros.",
+    6,
+    5   
+    );
+
+INSERT INTO movies(
+    title, 
+    year,
+    MPAA_rating,
+    studio,
+    actor_id,
+    character_id
+    )
+    VALUES (
+    "The Dark Knight",
+    "2008",
+    "PG-13",
+    "Warner Bros.",
+    7,
+    7   
+    );
+
+INSERT INTO movies(
+    title, 
+    year,
+    MPAA_rating,
+    studio,
+    actor_id,
+    character_id
+    )
+    VALUES (
+    "The Dark Knight",
+    "2008",
+    "PG-13",
+    "Warner Bros.",
+    2,
+    2   
+    );
+
+INSERT INTO movies(
+    title, 
+    year,
+    MPAA_rating,
+    studio,
+    actor_id,
+    character_id
+    )
+    VALUES (
+    "The Dark Knight",
+    "2008",
+    "PG-13",
+    "Warner Bros.",
+    8,
+    4   
+    );
+
+INSERT INTO movies(
+    title, 
+    year,
+    MPAA_rating,
+    studio,
+    actor_id,
+    character_id
+    )
     VALUES (
     "The Dark Knight Rises",
     "2012",
     "PG-13",
-    "Warner Bros."
-    ); 
+    "Warner Bros.",
+    1,
+    1   
+    );
+
+INSERT INTO movies(
+    title, 
+    year,
+    MPAA_rating,
+    studio,
+    actor_id,
+    character_id
+    )
+    VALUES (
+    "The Dark Knight Rises",
+    "2012",
+    "PG-13",
+    "Warner Bros.",
+    5,
+    5   
+    );
+
+INSERT INTO movies(
+    title, 
+    year,
+    MPAA_rating,
+    studio,
+    actor_id,
+    character_id
+    )
+    VALUES (
+    "The Dark Knight Rises",
+    "2012",
+    "PG-13",
+    "Warner Bros.",
+    9,
+    8   
+    );
+
+INSERT INTO movies(
+    title, 
+    year,
+    MPAA_rating,
+    studio,
+    actor_id,
+    character_id
+    )
+    VALUES (
+    "The Dark Knight Rises",
+    "2012",
+    "PG-13",
+    "Warner Bros.",
+    10,
+    9  
+    );
+
+INSERT INTO movies(
+    title, 
+    year,
+    MPAA_rating,
+    studio,
+    actor_id,
+    character_id
+    )
+    VALUES (
+    "The Dark Knight Rises",
+    "2012",
+    "PG-13",
+    "Warner Bros.",
+    11,
+    10   
+    );
 
 INSERT INTO actors (
     name)
@@ -184,12 +397,6 @@ INSERT INTO actors (
     name)
     VALUES (
     "Michael Caine"  
-    );
-
-INSERT INTO actors (
-    name)
-    VALUES (
-    "Christian Bale"  
     );
 
 INSERT INTO actors (
@@ -274,6 +481,12 @@ INSERT INTO characters (
     name)
     VALUES (
     "Commissioner Gordon"
+    );
+
+INSERT INTO characters (
+    name)
+    VALUES (
+    "Joker"
     );
 
 INSERT INTO characters (
