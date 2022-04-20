@@ -513,12 +513,6 @@ INSERT INTO characters (
     "Selina Kyle"
     );
 
-
-SELECT * FROM movies;
-SELECT * FROM actors;
-SELECT * FROM characters;
-
-
 -- Prints a header for the movies output
 .print "Movies"
 .print "======"
