@@ -103,7 +103,6 @@
 -- TODO!
 DROP TABLE IF EXISTS movies
 DROP TABLE IF EXISTS actors 
-DROP TABLE IF EXISTS cast 
 
 -- Create new tables, according to your domain model
 CREATE TABLE movies(
@@ -120,9 +119,7 @@ CREATE TABLE actors(
     last_name TEXT
     character_first_name TEXT,
     character_last_name TEXT
-);
-
-CREATE TABLE cast()
+    );
 
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
