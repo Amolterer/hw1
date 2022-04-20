@@ -104,6 +104,7 @@
 
 DROP TABLE IF EXISTS movies;
 DROP TABLE IF EXISTS actors; 
+DROP TABLE IF EXISTS characters;
 
 -- Create new tables, according to your domain model
 CREATE TABLE movies(
@@ -111,16 +112,22 @@ CREATE TABLE movies(
     title TEXT,
     year INTEGER, 
     MPAA_rating INTEGER,
-    studio TEXT
+    studio TEXT,
+    actor_id,
+    character_id
     );
 
 CREATE TABLE actors(
     id INTEGER PRIMARY KEY AUTOINCREMENT, 
-    first_name TEXT,
-    last_name TEXT
-    character_first_name TEXT,
-    character_last_name TEXT
+    name TEXT
     );
+
+CREATE TABLE characters (
+   id INTEGER PRIMARY KEY AUTOINCREMENT, 
+    name TEXT
+    ); 
+
+
 
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
@@ -129,13 +136,17 @@ INSERT INTO movies(
     title, 
     year,
     MPAA_rating,
-    studio
+    studio,
+    actor_id,
+    character_id
     )
     VALUES (
     "Batman Begins",
     "2005",
     "PG-13",
-    "Warner Bros."    
+    "Warner Bros.",
+    1,
+    1   
     );
 
 INSERT INTO movies(
@@ -162,6 +173,138 @@ INSERT INTO movies (
     "PG-13",
     "Warner Bros."
     ); 
+
+INSERT INTO actors (
+    name)
+    VALUES (
+    "Christian Bale"  
+    );
+
+INSERT INTO actors (
+    name)
+    VALUES (
+    "Michael Caine"  
+    );
+
+INSERT INTO actors (
+    name)
+    VALUES (
+    "Christian Bale"  
+    );
+
+INSERT INTO actors (
+    name)
+    VALUES (
+    "Liam Neeson"  
+    );
+
+INSERT INTO actors (
+    name)
+    VALUES (
+    "Katie Holmes"  
+    );
+
+INSERT INTO actors (
+    name)
+    VALUES (
+    "Gary Oldman"  
+    );
+
+INSERT INTO actors (
+    name)
+    VALUES (
+    "Heath Ledger"  
+    );
+
+INSERT INTO actors (
+    name)
+    VALUES (
+    "Aaron Eckhart"  
+    );
+
+INSERT INTO actors (
+    name)
+    VALUES (
+    "Maggie Gyllenhaal"  
+    );
+
+INSERT INTO actors (
+    name)
+    VALUES (
+    "Tom Hardy"  
+    );
+
+INSERT INTO actors (
+    name)
+    VALUES (
+    "Joseph Gordon-Levitt"  
+    );
+
+INSERT INTO actors (
+    name)
+    VALUES (
+    "Anne Hathaway"  
+    );
+
+INSERT INTO characters (
+    name)
+    VALUES (
+    "Bruce Wayne"
+    );
+
+INSERT INTO characters (
+    name)
+    VALUES (
+    "Alfred"
+    );
+
+INSERT INTO characters (
+    name)
+    VALUES (
+    "Ra's Al Ghul"
+    );
+
+INSERT INTO characters (
+    name)
+    VALUES (
+    "Rachel Dawes"
+    );
+
+INSERT INTO characters (
+    name)
+    VALUES (
+    "Commissioner Gordon"
+    );
+
+INSERT INTO characters (
+    name)
+    VALUES (
+    "Harvey Dent"
+    );
+
+INSERT INTO characters (
+    name)
+    VALUES (
+    "Bane"
+    );
+
+INSERT INTO characters (
+    name)
+    VALUES (
+    "John Blake"
+    );
+
+INSERT INTO characters (
+    name)
+    VALUES (
+    "Selina Kyle"
+    );
+
+
+SELECT * FROM movies;
+SELECT * FROM actors;
+SELECT * FROM characters;
+
 
 -- Prints a header for the movies output
 .print "Movies"
