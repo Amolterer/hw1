@@ -526,6 +526,7 @@ SELECT * FROM characters;
 
 -- The SQL statement for the movies output
 -- TODO!
+SELECT title, year, MPAA_rating, studio FROM Movies WHERE actor_id=1;
 
 -- Prints a header for the cast output
 .print ""
@@ -536,5 +537,8 @@ SELECT * FROM characters;
 
 -- The SQL statement for the cast output
 -- TODO!
+SELECT Movies.Title, Actors.Name, Characters.Name
+FROM Movies INNER JOIN Actors ON Actors.ID=movies.actor_id 
+INNER JOIN Characters ON Characters.ID=movies.character_id
 
 
